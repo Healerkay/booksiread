@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: healerkay/booksiread-frontend:20590
+        image: healerkay/booksiread-frontend:28864
         ports:
         - containerPort: 3000
