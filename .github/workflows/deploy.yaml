@@ -48,7 +48,7 @@ jobs:
 
       - name: "Connect to the cluster"
         run: |
-          aws eks update-kubeconfig --name pipe
+          'aws eks update-kubeconfig --name pipe'
 
 
       - name: "Install Helm"
