@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: healerkay/booksiread-frontend:28864
+        image: 'healerkay/booksiread-frontend:{{ .Values.image.tag }}'
         ports:
         - containerPort: 3000
