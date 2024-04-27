@@ -42,13 +42,13 @@ jobs:
       - name: "Setup AWS Credentials"
         uses: aws-actions/configure-aws-credentials@v4
         with: 
-          aws-region: "eu-west-2"
+          aws-region: "us-east-1"
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY }}
           aws-secret-access-key:  ${{ secrets.AWS_SECRET_KEY }}
 
       - name: "Connect to the cluster"
         run: |
-          'aws eks update-kubeconfig --name pipe'
+          aws eks update-kubeconfig --name pipe
 
 
       - name: "Install Helm"
